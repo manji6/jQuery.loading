@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>jQuery.loading samplePage</title>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+	<script type-"text/javascript" src="./jquery.loading.js"></script>
+	<script type="text/javascript">
+	$(function(){
+		jQuery.loading({
+			content: {
+text: "これが中身のサンプルです。<b>どうですか？</b>"
+			}
+			});
+
+		$(window).one("click",function(){
+			jQuery.loading("hide");
+		});
+
+	});
+	</script>
+
+</head>
+<body>
+	ここに本文だべや
+</body>
+</html>
